@@ -41,7 +41,7 @@ export const products = [
     name: "ChainOS",
     tagline: "Unified orchestration for supply chain operations.",
     cta: "Launch ChainOS",
-    href: "https://invisible-cto-supply-chain.vercel.app/",
+    href: "https://remix-of-supply-vision-66c648f6.vercel.app/",
     iconBg: "bg-blue-50 dark:bg-blue-950/40",
     iconBorder: "border-blue-200 dark:border-blue-800/50",
     iconColor: "text-blue-600 dark:text-blue-400",
