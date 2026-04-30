@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ─── Class-based dark mode for Tailwind v4 ─── */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ─── Expose CSS vars as Tailwind color tokens ─── */
+@theme inline {
+  --color-background: hsl(var(--bg));
+  --color-foreground: hsl(var(--fg));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-fg));
+  --color-primary: hsl(var(--primary));
+  --color-muted: hsl(var(--muted));
+  --color-muted-fg: hsl(var(--muted-fg));
+  --color-border: hsl(var(--border));
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* ─── Light mode (default) ─── */
+:root {
+  --bg: 0 0% 100%;
+  --fg: 224 71.4% 4.1%;
+  --card: 0 0% 100%;
+  --card-fg: 224 71.4% 4.1%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-fg: 210 40% 98%;
+  --muted: 210 40% 96.1%;
+  --muted-fg: 215.4 16.3% 46.9%;
+  --border: 214.3 32% 91.4%;
+  --radius: 0.75rem;
+}
+
+/* ─── Dark mode ─── */
+.dark {
+  --bg: 222 47% 5%;
+  --fg: 210 40% 98%;
+  --card: 222 47% 8%;
+  --card-fg: 210 40% 98%;
+  --primary: 192 91% 50%;
+  --primary-fg: 222 47% 5%;
+  --muted: 217 33% 12%;
+  --muted-fg: 215 20% 55%;
+  --border: 217 33% 17%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(var(--bg));
+  color: hsl(var(--fg));
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+/* ─── Keyframes ─── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.anim-up-0 {
+  animation: fadeInUp 0.55s ease-out 0s both;
+}
+
+.anim-up-1 {
+  animation: fadeInUp 0.55s ease-out 0.1s both;
+}
+
+.anim-up-2 {
+  animation: fadeInUp 0.55s ease-out 0.2s both;
+}
+
+.anim-up-3 {
+  animation: fadeInUp 0.55s ease-out 0.3s both;
+}
+
+.anim-card-0 {
+  animation: cardIn 0.55s ease-out 0.2s both;
+}
+
+.anim-card-1 {
+  animation: cardIn 0.55s ease-out 0.32s both;
+}
+
+.anim-card-2 {
+  animation: cardIn 0.55s ease-out 0.44s both;
+}
+
+.anim-blink {
+  animation: blink 2.4s ease-in-out infinite;
+}
