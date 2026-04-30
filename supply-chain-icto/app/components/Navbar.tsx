@@ -14,13 +14,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`sticky top-0 z-50 transition-all duration-500 ${scrolled
           ? // Scrolled: frosted glass with subtle border
-            'border-b border-border/60 bg-white/70 dark:bg-background/80 backdrop-blur-2xl shadow-sm'
+          'border-b border-border/60 bg-white/70 dark:bg-background/80 backdrop-blur-2xl shadow-sm'
           : // At top: fully transparent — merges with cloud bg
-            'border-b border-transparent bg-transparent backdrop-blur-none'
-      }`}
+          'border-b border-transparent bg-transparent backdrop-blur-none'
+        }`}
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-8 h-14 flex items-center justify-between">
         <div className="flex items-center gap-2.5">

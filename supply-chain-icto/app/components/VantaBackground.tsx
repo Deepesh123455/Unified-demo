@@ -41,14 +41,11 @@ export default function VantaBackground() {
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext('2d')!;
 
-    // ── Theme color palette ───────────────────────────────────────────
-    // Light: soft but visible blue threads — cloudy and spread
-    // Dark:  milky white-blue edges, cyan pulses & nodes
-    const edge      = isDark ? '180,210,255' : '59,130,246';   // blue-500 (stronger for visibility)
-    const pulse1    = isDark ? '125,211,252' : '96,165,250';   // sky-300 / blue-400
-    const pulse2    = isDark ? '56,189,248'  : '147,197,253';
-    const core      = isDark ? '14,165,233'  : '59,130,246';   // sky-500 / blue-500
-    const glow      = isDark ? '56,189,248'  : '96,165,250';   // sky-400 / blue-400
+    const edge = isDark ? '180,210,255' : '59,130,246';   // blue-500 (stronger for visibility)
+    const pulse1 = isDark ? '125,211,252' : '96,165,250';   // sky-300 / blue-400
+    const pulse2 = isDark ? '56,189,248' : '147,197,253';
+    const core = isDark ? '14,165,233' : '59,130,246';   // sky-500 / blue-500
+    const glow = isDark ? '56,189,248' : '96,165,250';   // sky-400 / blue-400
     const edgeAlpha = isDark ? 0.40 : 0.35;  // boosted for clear visibility
     const nodeAlpha = isDark ? 1.00 : 0.75;  // clearer nodes
 

@@ -25,20 +25,15 @@ export const products = [
     tagline: "Transform raw data into strategic foresight.",
     cta: "Launch SheetSense",
     href: "https://invisiblecto-sheet-analyzer.vercel.app/",
-    iconBg: "bg-blue-50 dark:bg-blue-950/40",
-    iconBorder: "border-blue-200 dark:border-blue-800/50",
+    iconBg: "bg-transparent",
+    iconBorder: "border-transparent",
     iconColor: "text-blue-600 dark:text-blue-400",
     badgeCls: "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/30 border-blue-200 dark:border-blue-800/50",
     ctaCls: "text-blue-600 dark:text-blue-400",
     orbCls: "bg-blue-400/10 dark:bg-blue-500/10",
     features: ["Deep Data Extraction", "Instant Data Insights", "Automated Reports", "Deep Analytics and Visualizations",],
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="2" />
-        <line x1="3" y1="9" x2="21" y2="9" />
-        <line x1="3" y1="15" x2="21" y2="15" />
-        <line x1="9" y1="9" x2="9" y2="21" />
-      </svg>
+      <img src="/sheet.png" alt="SheetSense" className="w-full h-full object-cover rounded-xl" />
     ),
   },
   {

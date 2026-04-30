@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import ThemeToggle from "./components/ThemeToggle";
 import Navbar from "./components/Navbar";
 import VantaBackground from "./components/VantaBackground";
 
@@ -51,10 +50,10 @@ export default function Home() {
 
           {/* Headline — clamp so it stays 1-2 lines on any screen */}
           <h1 className="text-[clamp(1.9rem,5.5vw,3.4rem)] font-black leading-[1.08] tracking-[-1.5px] mb-4 text-foreground">
-            Power your supply chain<br className="hidden sm:block" />
-            {" "}with{" "}
+            Your Supply Chain<br className="hidden sm:block" />
+            {" "}Thinks{" "}
             <span className="bg-linear-to-r from-primary to-cyan-500 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent whitespace-nowrap">
-              AI precision.
+              For Itself.
             </span>
           </h1>
 
@@ -65,7 +64,7 @@ export default function Home() {
 
           {/* Pill badges — wrap gracefully */}
           <div className="flex flex-wrap justify-center gap-2">
-            {["Adaptive AI", "Zero Setup", "Enterprise Ready"].map(t => (
+            {["Adaptive AI", "Minimal Setup", "Enterprise Ready", "Complete Auditibility"].map(t => (
               <span key={t} className="flex items-center gap-1 text-[10px] font-medium text-muted-fg bg-muted border border-border px-2.5 py-1 rounded-full">
                 <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
                   <path d="M2 5.5L4 7.5L8 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
