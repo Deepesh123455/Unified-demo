@@ -223,7 +223,7 @@ function ProductCard({ p, animClass }: { p: Product; animClass: string }) {
         {/* Divider & CTA */}
         <div className="mt-auto pt-5 border-t border-border/40">
           <div className={`flex items-center justify-between group/cta ${p.ctaCls}`}>
-            <span className="text-[12px] font-black tracking-tight uppercase">
+            <span className="text-[10px] font-black tracking-tight uppercase">
               {p.cta}
             </span>
             <div className="w-7 h-7 rounded-full border border-current flex items-center justify-center transition-all duration-500 group-hover:translate-x-1 group-hover:bg-primary group-hover:text-white group-hover:border-primary">
